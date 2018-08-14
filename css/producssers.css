@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,900');
+
+*
+{
+	box-sizing: border-box;
+	border: 0;
+	margin: auto;
+	transition: all ease-in-out 160ms;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+p
+{
+	line-height: 1.3em;
+}
+
+body
+{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+.containter
+{
+	width: 95%;
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+.clearfix::after,
+section::after,
+footer::after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*
+===============
+COL SYST
+===============
+*/
+
+[class^=col-]
+{
+	float: left;
+	padding: 2em 0;
+}
+.col-1
+{
+	width: 50%;
+}
+
+@media(max-width: 35rem)
+{
+	.col-1
+	{
+		width: 100%;
+	}
+}
+
+/*
+===============
+TYPOG
+===============
+*/
+
+h1
+{
+	font-weight: 300;
+	font-size: 1.8rem;
+}
+
+.title
+{
+	font-size: 2.5rem;
+	margin-bottom: 1.5em;
+}
+
+.title span
+{
+	font-weight: 300;
+	display: block;
+	font-size: .70em;
+}
+
+@media (min-width: 55rem)
+{
+	.title
+	{
+		font-size: 3.5rem;
+	}
+}
+
+@media (max-width: 368px)
+{
+	h1
+	{
+		font-size: 1.55em;
+	}
+}
+
+/*
+===============
+BUTTS
+===============
+*/
+.button
+{
+	display: inline-block;
+	font-size: 1.15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding: .5em 1.75em;
+	background-color: white;
+}
+
+.button-accent
+{
+	color: lightblue;
+}
+
+.button-accent:hover,
+.button-accent:focus
+{
+	background: black;
+}
+
+@media (min-width: 60rem)
+{
+	.button
+	{
+		font-size: 2rem;
+	}
+}
+
+/*
+===============
+HEADER
+===============
+*/
+
+header
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 0;
+	padding:1rem 0;
+	background-color: lightblue;
+}
+
+nav a
+{
+	text-decoration: none;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: .8rem;
+	padding:.75em;
+	color: white;
+}
+
+@media (min-width: 83rem)
+{
+	.logo
+	{
+		float: left;
+		transform: translateX(3em); 
+	}
+
+	nav
+	{
+		float: right;
+		transform: translateY(3em);
+	}
+
+	nav a
+	{
+		font-size: 2rem;
+	}
+}
+
+/*
+===============
+TITLE
+===============
+*/
+
+.title h1
+{
+	font-size: 4rem;
+}
+
+@media(max-width: 355px)
+{
+	.title h1
+	{
+		padding-top: 5rem;
+	}
+}
+
+/*
+===============
+TABLE
+===============
+*/
+table,
+td
+{
+	border: .2em solid lightblue;
+}
+
+table
+{
+	background-color: lightblue;
+	width: 100%;
+}
+
+td
+{
+	background-color: white;
+	width: 10rem;
+	height: 5rem;
+}
+
+details
+{
+	outline: .2em solid lightblue;
+	width: 60%;
+}
+
+summary
+{
+	outline: .2em solid lightblue;
+	padding: 1em 0;
+	color: lightblue;
+}
+
+summary::-webkit-details-marker
+{
+	display:none;
+}
+
+summary:hover
+{
+	color: white;
+	background-color: lightblue;
+}

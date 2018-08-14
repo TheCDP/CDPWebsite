@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,900');
+
+*
+{
+	box-sizing: border-box;
+	border: 0;
+	margin: auto;
+	transition: all ease-in-out 160ms;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+p
+{
+	line-height: 1.3em;
+}
+
+body
+{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+.containter
+{
+	width: 95%;
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+.clearfix::after,
+section::after,
+footer::after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*
+===============
+COL SYST
+===============
+*/
+
+[class^=col-]
+{
+	float: left;
+	padding: 2em 0;
+}
+.col-1
+{
+	width: 50%;
+}
+
+@media(max-width: 35rem)
+{
+	.col-1
+	{
+		width: 100%;
+	}
+}
+
+/*
+===============
+TYPOG
+===============
+*/
+
+h1
+{
+	font-weight: 300;
+	font-size: 1.8rem;
+}
+
+.title
+{
+	color: black;
+	font-size: 2.5rem;
+	margin-bottom: 1.5em;
+}
+
+.title span
+{
+	font-weight: 300;
+	display: block;
+	font-size: .70em;
+}
+
+@media (min-width: 55rem)
+{
+	.title
+	{
+		font-size: 3.5rem;
+	}
+}
+
+@media (max-width: 368px)
+{
+	h1
+	{
+		font-size: 1.55em;
+	}
+}
+
+/*
+===============
+BUTTS
+===============
+*/
+
+.button
+{
+	display: inline-block;
+	font-size: 1.15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding: .5em 1.75em;
+}
+
+.button-accent
+{
+	color: white;
+}
+
+.button-accent:hover,
+.button-accent:focus
+{
+	background: lightblue;
+}
+
+@media (min-width: 60rem)
+{
+	.button
+	{
+		font-size: 2rem;
+	}
+}
+
+.button-small
+{
+	font-size: .6rem;
+}
+
+/*
+===============
+HEADER
+===============
+*/
+
+header
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 1em;
+}
+
+nav ul
+{
+	list-style: none;
+}
+
+nav li
+{
+	display: inline-block;
+	margin: 1em;
+}
+
+nav a
+{
+	text-decoration: none;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: .8rem;
+	padding:.75em;
+	color: lightblue;
+}
+
+nav a:hover,
+nav a:focus
+{
+	color: blue;
+}
+
+@media (min-width: 83rem)
+{
+	.logo
+	{
+		float: left;
+		transform: translateX(3em); 
+	}
+
+	nav
+	{
+		float: right;
+		transform: translateY(3em);
+	}
+
+	nav a
+	{
+		font-size: 2rem;
+	}
+}
+
+/*
+===============
+HOME HERO
+===============
+*/
+
+.homehero
+{
+	background: #111111 url("../imgs/frountwoman2.jpg");
+
+	background-size: cover;
+	background-origin: center;
+
+	padding: 15em 0;
+
+	color: lightblue;
+}
+
+@media (min-width: 65rem)
+{
+	.homehero
+	{
+		height: 100vh;
+		padding-top: 40vh;
+	}
+}
+
+
+@media (max-width: 565px)
+{
+	.homehero
+	{
+		padding-top: 45vh;
+	}
+}
+
+/*
+===============
+HOME ABOUT
+===============
+*/
+
+.homeabout-tb
+{
+	background-color: #232323;
+	padding: 4em;
+	width:100vw;
+	margin-left: -2.5vw;
+
+	color: white;
+
+	outline: 2px solid;
+	outline-offset: -2.5em;
+	outline-color: lightblue;
+
+	position: relative;
+}
+
+.homeabout-tb h1
+{
+	color: lightblue;
+	position: absolute;
+	top: .7em;
+	background: #232323;
+	padding: 0 .25em;
+
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media	(min-width: 25rem)
+{
+	h1
+	{
+		font-size: 1.9rem;
+	}
+
+	.homeabout-tb h1
+	{
+		top: 1.15rem;
+		padding:0 .325rem;
+	}
+}
+
+@media	(min-width: 100rem)
+{
+	h1
+	{
+		font-size: 2.5rem;
+	}
+
+	.homeabout
+	{
+		background-image: url("../imgs/dentistboy2.jpg");
+		background-repeat: no-repeat;
+		background-origin: center;
+		background-size: 50vw;
+		padding-bottom: 5em;
+	}
+
+	.homeabout-tb
+	{
+		width:60%;
+		margin-left: -2.5vw;
+		text-align: left;
+		top: -4em;
+		padding: 6em;
+		box-shadow: 0 0 3em 0 #232323;
+		outline: 4px solid;
+		outline-color: lightblue;
+	}
+
+	.homeabout-tb h1
+	{
+		/*text-align: left;
+		left: 0;
+		transform: translateX(3.5rem);*/
+		top: .7rem;
+		padding:0 .5rem;
+	}
+}
+
+@media(max-width: 100rem)
+{
+	@media(min-width: 1000px)
+	{
+		.homeabout-tb
+		{
+			width: 100%;
+			margin: auto 0;
+		}
+
+		.homeabout-tb p
+		{
+			text-align: left;
+		}	
+	}
+}
+
+/*
+===============
+PORTFOLIO
+===============
+*/
+
+.portfolio
+{
+	margin: 3em 0 0;
+}
+
+.teamitem
+{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.teamitem img
+{
+	display: block;
+}
+
+.teamitem-desc
+{
+	position: absolute;
+	z-index: 100;
+	bottom: 0em;
+	left: 5em;
+	right: 5em;
+	color: white;
+	background-color: rgba(0, 0, 0, .75);
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+@media(min-width: 35rem)
+{
+	.teamitem
+	{
+		width: 50%;
+		float: left;
+	}
+}
+
+@media(min-width: 60rem)
+{
+	.teamitem
+	{
+		width: 33.333334%;
+	}
+	
+	.teamitem-desc
+	{
+		transform: translateY(160%);
+	}
+
+	.teamitem:hover .teamitem-desc
+	{
+		transform: translateY(0%);
+	}
+}
+
+/*
+===============
+FOOTER
+===============
+*/
+
+.CTA
+{
+	padding:5em;
+	background-color: lightblue;
+}
+
+.CTA h1
+{
+	padding: 1em;
+}
+
+.CTA .button-accent:hover,
+.CTA .button-accent:focus
+{
+	color: lightblue;
+	background-color: white;
+}
+
+/*
+===============
+FOOTER
+===============
+*/
+
+footer
+{
+	background-color: #232323;
+	color: white;
+}
+
+.unstyledList
+{
+	list-style: none;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: white;
+}
+
+footer a:hover,
+footer a:focus
+{
+	color: lightgrey;
+}
